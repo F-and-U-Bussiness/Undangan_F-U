@@ -249,3 +249,13 @@ onSnapshot(q, (snapshot) => {
   });
 
 });
+
+// Ambil parameter dari URL
+const params = new URLSearchParams(window.location.search);
+
+const namaTamu = params.get("tamu");
+
+if (namaTamu) {
+    document.getElementById("guestName").textContent =
+        decodeURIComponent(namaTamu);
+}
