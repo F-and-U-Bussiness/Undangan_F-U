@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan Utari & Fajar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <audio id="bgAudio" loop>
+    <source src="music/musik.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="page">
+    <section class="cover">
+      <div class="overlay"></div>
+      <div class="cover-content">
+        <p class="top-text">The Wedding Of</p>
+        <h1 class="couple-name">Utari<br /><span>&</span> Fajar</h1>
+        <p class="dear-text">DEAR</p>
+        <h2 class="guest-name" id="guestName">Tamu Undangan</h2>
+        <p class="cover-date">30. 04. 2026</p>
+        <button class="open-btn" id="openBtn">Buka Undangan</button>
+      </div>
+    </section>
+
+    <main class="main-content hidden" id="mainContent">
+      <section class="section hero">
+        <div class="container hero-content">
+          <div class="hero-image">
+            <img src="img/mempelai3.png" alt="Utari & Fajar" />
+          </div>
+          <p class="hero-phrase">The Wedding of</p>
+          <h1 class="hero-couple-name">Utari & Fajar</h1>
+          <p class="hero-date">30 April 2026 | 09:00 WIB</p>
+          <button class="save-date-btn" id="saveDateBtn">Save The Date</button>
+        </div>
+      </section>
+
+      <section class="section verse-section">
+        <div class="container">
+          <div class="hero-verse">
+            <h2 class="verse-heading">U&F</h2>
+            <p class="verse-arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</p>
+            <p class="verse-translation">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.” (QS. Ar-Rum: 21)</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section welcome">
+        <div class="container welcome-card">
+          <div class="welcome-left">
+            <p class="section-label">Assalamu'alaikum Wr. Wb.</p>
+            <h2>Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri pernikahan kami.</h2>
+            <p>Semoga kehadiran dan doa restu Bapak/Ibu/Saudara/i menjadi berkah bagi kami berdua.</p>
+          </div>
+          <div class="welcome-right">
+            <div class="photo-card">
+              <img src="img/mempelai1.png" alt="Utari" />
+              <div class="photo-caption">Utari</div>
+              
+            </div>
+            <p>Putri Pertama Dari Bapak Sumardi & Ibu Pita Patimah</p>
+            <div class="photo-card">
+              <img src="img/mempelai2.png" alt="Fajar" />
+              <div class="photo-caption">Fajar</div>
+              
+            </div>
+            <p>Putra Kedua Dari Bapak Acin & Ibu Siti Khotiman</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="container">
+          <span class="section-label">Save The Date</span>
+          <h2>Kami bersyukur, dipertemukan Allah di waktu terbaik.</h2>
+          <p>Kini kami menanti hari istimewa kami. Jadwal acara dan doa restu Anda sangat berarti untuk kami.</p>
+          <div class="countdown" id="countdown">
+            <div><span id="days">0</span><small>Hari</small></div>
+            <div><span id="hours">0</span><small>Jam</small></div>
+            <div><span id="minutes">0</span><small>Menit</small></div>
+            <div><span id="seconds">0</span><small>Detik</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story">
+        <div class="container">
+          <span class="section-label">Love Story</span>
+          <h2>Kisah kami dimulai dari hari biasa yang kemudian menjadi istimewa.</h2>
+          <p>Perkenalan kami bermula saat duduk di bangku Sekolah Menengah Kejuruan. 
+            Di Angkringan Awal Mulai Kami Bertemu Dan Berkenalan Sampai Kami Saling Menyukai, 
+            Saling Menyayangi, Saling Mengerti Hingga 2 Tahun Kita Bekenalan Lalu Berpacaran
+             Selama 1 Tahun, Lalu Kami Memutuskan Untuk Menikah Hidup Bahagia Bersama - Sama. </p>
+        </div>
+      </section>
+
+      <section class="section event">
+        <div class="container">
+          <span class="section-label">Acara</span>
+          <h2>Waktu dan tempat acara</h2>
+          <div class="event-grid">
+            <article class="event-card">
+              <h3>Akad Nikah</h3>
+              <p class="event-date">Rabu, 29 April 2026</p>
+              <p>13:00 WIB</p>
+              <p>Kp. Pasir Awi RT/RW 06/02, Desa Suka Asih, Kec. Pasar Kemis, Kab. Tangerang, Banten</p>
+            </article>
+            <article class="event-card">
+              <h3>Resepsi</h3>
+              <p class="event-date">Kamis, 30 April 2026</p>
+              <p>09:00 WIB – Selesai</p>
+              <p>Di tempat yang sama dengan akad nikah</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery">
+        <div class="container">
+          <span class="section-label">Galeri Foto</span>
+          <h2>Kenangan kami bersama</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item"><img src="img/galery.png" alt="Galeri 1" /></div>
+            <div class="gallery-item"><img src="img/galery.png" alt="Galeri 2" /></div>
+            <div class="gallery-item"><img src="img/galery.png" alt="Galeri 3" /></div>
+            <div class="gallery-item"><img src="img/galery.png" alt="Galeri 4" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section map">
+        <div class="container map-card">
+          <div>
+            <span class="section-label">Lokasi</span>
+            <h2>Lokasi akad & resepsi</h2>
+            <p>Klik tombol di bawah untuk melihat rute langsung ke lokasi acara di Google Maps.</p>
+            <a class="action-btn" href="https://maps.app.goo.gl/obUpxmfc63NTA55r7" target="_blank" rel="noreferrer">Lihat Lokasi</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126931.29878032571!2d106.38759824335938!3d-6.183842299999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42007ef9f4e9ab%3A0x63814b5090cd6643!2sAR%20Motor!5e0!3m2!1sid!2sid!4v1776498687942!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section class="section gift">
+        <div class="container">
+          <span class="section-label">Wedding Gift</span>
+          <h2>Doa restu Anda adalah hadiah terindah.</h2>
+          <p>Jika Anda ingin memberi hadiah, klik tombol di bawah untuk menuju opsi cashless atau transfer.</p>
+          <a class="action-btn" id="giftBtn" href="#">Klik Disini</a>
+          <p id="rekeningInfo" style="display: none; margin-top: 10px; color: #5d4037; font-weight: 600;">Nomor Rekening: Seabank 901336248560 a.n. Abdul Karim Fajar Mauludin<br>Terima kasih atas hadiahnya!</p>
+        </div>
+      </section>
+
+      <section class="section rsvp">
+        <div class="container">
+          <span class="section-label">RSVP</span>
+          <h2>Konfirmasi kehadiran dan kirimkan doa</h2>
+          <div class="rsvp-grid">
+            <form id="rsvpForm" class="rsvp-form">
+              <div class="form-group">
+                <label for="nameInput">Nama</label>
+                <input type="text" id="nameInput" placeholder="Masukkan nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label>Kehadiran</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="attendance" value="Hadir" checked /> Hadir</label>
+                  <label><input type="radio" name="attendance" value="Tidak Hadir" /> Tidak Hadir</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="messageInput">Ucapan / Doa</label>
+                <textarea id="messageInput" rows="4" placeholder="Tulis doa dan harapanmu..." required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Kirim</button>
+              <p class="form-note">Terima kasih atas doa dan kehadiran Anda.</p>
+            </form>
+            <div class="comment-panel">
+              <h3>Ucapan Terbaru</h3>
+              <div id="commentList" class="comment-list">
+                <div class="comment-item"><strong>Contoh:</strong> Semoga pernikahan kalian penuh berkah dan kebahagiaan.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Utari & Fajar</p>
+        <p>Made with ❤ by Utari & Fajar</p>
+        <button id="musicToggle" class="music-btn">Musik On</button>
+      </footer>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+
+</body>
+</html>
