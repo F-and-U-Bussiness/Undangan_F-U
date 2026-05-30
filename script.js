@@ -18,6 +18,36 @@ const firebaseConfig = {
   appId: "1:129129659389:web:e6b6715e662de7c4d5b794"
 };
 
+
+
+function flowerConfetti() {
+
+    const container = document.getElementById("flower-container");
+
+    for(let i = 0; i < 3; i++) {
+
+        const flower = document.createElement("div");
+
+        flower.classList.add("flower");
+        flower.innerHTML = "🌸";
+
+        flower.style.left = Math.random() * 100 + "vw";
+        flower.style.fontSize = (18 + Math.random() * 10) + "px";
+
+        flower.style.animationDuration =
+            (8 + Math.random() * 5) + "s";
+
+        flower.style.animationDelay =
+            (Math.random() * 2) + "s";
+
+        container.appendChild(flower);
+
+        setTimeout(() => {
+            flower.remove();
+        }, 15000);
+    }
+}
+
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
@@ -43,11 +73,22 @@ const guest = urlParams.get('to');
 guestName.textContent = decodeGuestName(guest);
 
 openBtn.addEventListener('click', () => {
+
+  const bunga = setInterval(() => {
+      flowerConfetti();
+  }, 1000);
+
+  setTimeout(() => {
+      clearInterval(bunga);
+  }, 30000);
+
   const cover = document.querySelector('.cover');
-  cover.style.display = 'none';
+  cover.style.display = 'none'
+
   mainContent.classList.remove('hidden');
   mainContent.scrollIntoView({ behavior: 'smooth' });
-  if (bgAudio && !isMusicPlaying) {
+
+  if (bgAudio && !isMusicPlaying)  {
     bgAudio.play().then(() => {
       isMusicPlaying = true;
       musicToggle.textContent = 'Musik Off';
