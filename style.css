@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #e6f3ff;
+  background: #ffffff;
   color: #2c3e50;
 }
 
@@ -32,7 +32,7 @@ a.action-btn {
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  background: #fff;
+  background: #ffc5dd;
 }
 
 .cover::before {
@@ -151,7 +151,7 @@ a.action-btn {
 }
 
 .hero {
-  background: #fff url('img/background\ \(2\).jpg') center center / contain no-repeat;
+  background: #ffc5dd url('img/background\ \(2\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -623,7 +623,7 @@ a.action-btn {
 
 
 .section.verse-section 
-  { background: #fff url('img/background\ \(3\).jpg') center center / contain no-repeat;
+  { background: #ffc5dd url('img/background\ \(3\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -675,7 +675,7 @@ a.action-btn {
 
 
 .section.welcome {
- background: #fff url('img/background\ \(4\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(4\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -689,7 +689,7 @@ a.action-btn {
 }
 
 .section.intro  {
- background: #fff url('img/background\ \(5\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(5\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -700,7 +700,7 @@ a.action-btn {
 
 
 .section.story{
- background: #fff url('img/background\ \(6\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(6\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -710,7 +710,7 @@ a.action-btn {
 }
 
 .section.event{
- background: #fff url('img/background\ \(7\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(7\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -720,7 +720,7 @@ a.action-btn {
 }
 
 .section.gallery{
- background: #fff url('img/background\ \(8\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(8\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -730,7 +730,7 @@ a.action-btn {
 }
 
 .section.map{
- background: #fff url('img/background\ \(9\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(9\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -740,7 +740,7 @@ a.action-btn {
 }
 
 .section.gift{
- background: #fff url('img/background\ \(10\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(10\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -750,7 +750,7 @@ a.action-btn {
 }
 
 .section.rsvp{
- background: #fff url('img/background\ \(10\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(10\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
