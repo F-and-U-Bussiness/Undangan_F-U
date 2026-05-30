@@ -150,6 +150,44 @@ a.action-btn {
   color: #34495e;
 }
 
+#flower-container{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.flower{
+    position: absolute;
+    top: -50px;
+    animation: sakuraFall linear forwards;
+}
+
+@keyframes sakuraFall{
+    0%{
+        transform: translateY(-50px) translateX(0);
+        opacity:1;
+    }
+
+    25%{
+        transform: translateY(25vh) translateX(25px) rotate(90deg);
+    }
+
+    50%{
+        transform: translateY(50vh) translateX(-25px) rotate(180deg);
+    }
+
+    75%{
+        transform: translateY(75vh) translateX(25px) rotate(270deg);
+    }
+
+    100%{
+        transform: translateY(110vh) translateX(-25px) rotate(360deg);
+        opacity:.8;
+    }
+}
+
 .hero {
   background: #ffc5dd url('img/background\ \(2\).jpg') center center / contain no-repeat;
   text-align: center;
@@ -850,6 +888,13 @@ background: #ffc5dd url('img/background\ \(4\).jpg') center center / contain no-
     margin-top: 30px;
 }
 
+.container.map-card{
+    width: 100%;
+    max-width: 360px;
+    min-height: 650px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
 .section.map{
  background: #ffc5dd url('img/background\ \(9\).jpg') center center / contain no-repeat;
   text-align: center;
@@ -860,6 +905,12 @@ background: #ffc5dd url('img/background\ \(4\).jpg') center center / contain no-
   padding: 20px;
 }
 
+.section.map .map-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
 .section.gift{
  background: #ffc5dd url('img/background\ \(10\).jpg') center center / contain no-repeat;
   text-align: center;
@@ -870,8 +921,14 @@ background: #ffc5dd url('img/background\ \(4\).jpg') center center / contain no-
   padding: 20px;
 }
 
+.container6 {
+    width: 100%;
+    max-width: 360px;
+    min-height: 650px;
+    padding: 130px 20px;}
+
 .section.rsvp{
- background: #fff url('img/background\ \(10\).jpg') center center / contain no-repeat;
+ background: #ffc5dd url('img/background\ \(10\).jpg') center center / contain no-repeat;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -880,3 +937,33 @@ background: #ffc5dd url('img/background\ \(4\).jpg') center center / contain no-
   padding: 20px;
 }
 
+.rsvp-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+.rsvp-form {
+
+    width: 100%;
+    max-width: 360px;
+    min-height: 650px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+
+.section.ucapan {background: #ffc5dd url('img/background\ \(10\).jpg') center center / contain no-repeat;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;}
+
+  .comment-list {
+    width: 100%;
+    max-width: 360px;
+    min-height: 650px;
+    padding: 5px 15px;
+    box-sizing: border-box;}
